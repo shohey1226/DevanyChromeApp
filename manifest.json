@@ -3,6 +3,7 @@
   "description": "Devany Chrome App.",
   "version": "0.1",
   "manifest_version": 2,
+  "permissions": [ "webview" ],
   "app": {
     "background": {
       "scripts": ["background.js"]
