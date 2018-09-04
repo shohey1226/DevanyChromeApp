@@ -3,7 +3,7 @@
   "description": "Devany Chrome App.",
   "version": "0.1",
   "manifest_version": 2,
-  "permissions": [ "webview", "https://*devany*", "browser" ],
+  "permissions": [ "webview", "https://devany.herokuapp.com/", "https://*.devany.net/", "browser" ],
   "app": {
     "background": {
       "scripts": ["background.js"]
