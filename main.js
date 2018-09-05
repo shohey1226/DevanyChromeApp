@@ -6,3 +6,10 @@ function updateWebviews() {
 
 onload = updateWebviews;
 window.onresize = updateWebviews;
+
+// open with chrome browser tab(not chrome app)
+var webview = document.querySelector("webview");
+webview.addEventListener('newwindow', function (e) {
+  e.preventDefault(); 
+  chrome.browser.openTab({url: e.targetUrl});
+});
